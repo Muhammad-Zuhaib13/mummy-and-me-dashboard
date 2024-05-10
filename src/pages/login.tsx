@@ -30,8 +30,9 @@ export default function SignIn({ providers, csrfToken }: any) {
       <AuthWrapper>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mb: { xs: -0.5, sm: 0.5 } }}>
+            <Stack direction="column" justifyContent="space-between" alignItems="baseline"  sx={{ mb: { xs: -0.5, sm: 0.5 }, gap:"16px" }}>
               <Typography variant="h3">Sign in</Typography>
+              <Typography variant="h6">Welcome back! Sign in to access your account and enjoy personalized experience with us.</Typography>
               {/* <NextLink href="/register" passHref legacyBehavior>
                 <Link variant="body1" color="primary">
                   Don&apos;t have an account?

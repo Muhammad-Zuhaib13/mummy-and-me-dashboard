@@ -1,0 +1,19 @@
+.MuiInputBase-root {
+  border-radius: 6px !important;
+}
+.MuiInputBase-root:focus,
+.MuiInputBase-root:hover {
+  border-color: #f79e1f !important;
+}
+.MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #f79e1f !important;
+}
+.MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+}
+.MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #f79e1f !important;
+}
+
+.Mui-focused {
+  border-color: #f79e1f !important;
+}

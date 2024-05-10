@@ -39,7 +39,7 @@ import { useSelector } from 'store';
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 import { useDispatch } from 'store';
 import { loginAdmin } from 'store/reducers/auth';
-
+import { colorTheme } from 'common/colorTheme';
 const Auth0 = '/assets/images/icons/auth0.svg';
 const Cognito = '/assets/images/icons/aws-cognito.svg';
 const Google = '/assets/images/icons/google.svg';
@@ -105,6 +105,14 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                     onChange={handleChange}
                     placeholder="Enter email address"
                     fullWidth
+                    sx={{
+                      '&:hover fieldset': {
+                        borderColor: `${colorTheme.primary} !important`
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: `${colorTheme.primary} !important`
+                      }
+                    }}
                     error={Boolean(touched.email && errors.email)}
                   />
                   {touched.email && errors.email && (
@@ -128,6 +136,14 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                     onBlur={(event: React.FocusEvent<any, Element>) => {
                       setCapsWarning(false);
                       handleBlur(event);
+                    }}
+                    sx={{
+                      '&:hover fieldset': {
+                        borderColor: `${colorTheme.primary} !important`
+                      },
+                      '&.Mui-focused fieldset': {
+                        borderColor: `${colorTheme.primary} !important`
+                      }
                     }}
                     onKeyDown={onKeyDown}
                     onChange={handleChange}
@@ -172,7 +188,7 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                     type="submit"
                     variant="contained"
                     color="primary"
-                    sx={{"&:hover": { bgcolor: '#F79E1F'}}}
+                    sx={{ '&:hover': { bgcolor: '#F79E1F' } }}
                     // onClick={() => router.push('/dashboard')}
                   >
                     {isLoading ? <CircularProgress size={24} color="inherit" /> : 'Sign in'}
