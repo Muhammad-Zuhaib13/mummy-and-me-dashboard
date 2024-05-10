@@ -92,8 +92,8 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
           <form noValidate onSubmit={handleSubmit}>
             <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
-            <Grid container spacing={3}>
-              <Grid item xs={12}>
+            <Grid container >
+              <Grid item xs={12} sx={{paddingBottom:"16px"}}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="email-login">Email Address</InputLabel>
                   <OutlinedInput
@@ -122,7 +122,7 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                   )}
                 </Stack>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} sx={{paddingBottom:"16px"}}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="password-login">Password</InputLabel>
                   <OutlinedInput
@@ -195,8 +195,13 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                   </Button>
                 </AnimateButton>
               </Grid>
-              <Grid item xs={12} sx={{ mt: -1 }}>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+              <Grid item xs={12} sx={{ position: 'relative', top:'32px' } }>
+                <Stack direction="row" justifyContent="center" alignItems="center">
+                  <NextLink href={'/auth/forgot-password'} passHref legacyBehavior>
+                    <Link variant="h6" color="primary">
+                      Forgot Password?
+                    </Link>
+                  </NextLink>
                   {/* <FormControlLabel
                     control={
                       <Checkbox
