@@ -172,6 +172,7 @@ const AuthLogin = ({ providers, csrfToken }: any) => {
                     type="submit"
                     variant="contained"
                     color="primary"
+                    sx={{"&:hover": { bgcolor: '#F79E1F'}}}
                     // onClick={() => router.push('/dashboard')}
                   >
                     {isLoading ? <CircularProgress size={24} color="inherit" /> : 'Sign in'}

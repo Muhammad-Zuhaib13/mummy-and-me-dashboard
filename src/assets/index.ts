@@ -7,6 +7,7 @@ import AdsFilled from './icons/ads-filled.png';
 import UsersOutlined from './icons/users-outlined.png';
 import UsersFilled from './icons/users-filled.png';
 import NumberOMLoginLogo from './images/number-om-login-logo.png';
+import MummyandMeLogo from './icons/logo-mummy-and-me.svg'
 // Images
 import NumOmDashboardLogo from './images/numbers-om-admin-logo.png';
 export const Icons = {
@@ -15,9 +16,11 @@ export const Icons = {
   AdsOutlined,
   AdsFilled,
   UsersOutlined,
-  UsersFilled
+  UsersFilled,
+  MummyandMeLogo
 };
 export const Images = {
   NumOmDashboardLogo,
-  NumberOMLoginLogo
+  NumberOMLoginLogo,
+
 };

@@ -7,7 +7,7 @@ import { SxProps } from '@mui/system';
 // project import
 // import LogoMain from './LogoMain';
 // import LogoIcon from './LogoIcon';
-import { Images } from '../../assets';
+import { Images, Icons } from '../../assets';
 import { APP_DEFAULT_PATH } from 'utils/config';
 import Image from 'next/legacy/image';
 // ==============================|| MAIN LOGO ||============================== //
@@ -23,7 +23,7 @@ interface Props {
 const LogoSection = ({ reverse, isIcon, sx, to, loginIcon = false }: Props) => (
   <NextLink href={!to ? APP_DEFAULT_PATH : to} passHref legacyBehavior>
     <ButtonBase disableRipple sx={sx}>
-      {loginIcon == true ? <Image src={Images.NumberOMLoginLogo} /> : <Image src={Images.NumOmDashboardLogo} />}
+      {loginIcon == true ? <Image src={Icons.MummyandMeLogo} /> : <Image src={Icons.MummyandMeLogo} />}
     </ButtonBase>
   </NextLink>
 );

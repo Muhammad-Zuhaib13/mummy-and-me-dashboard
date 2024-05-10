@@ -16,7 +16,7 @@ interface Props {
 // ==============================|| AUTHENTICATION - WRAPPER ||============================== //
 
 const AuthWrapper = ({ children }: Props) => (
-  <Box sx={{ minHeight: '100vh', background: '#EDF6FF' }}>
+  <Box sx={{ minHeight: '100vh', background: '#FAFAFA' }}>
     {/* <AuthBackground /> */}
     <Grid
       container
@@ -26,9 +26,9 @@ const AuthWrapper = ({ children }: Props) => (
         minHeight: '100vh'
       }}
     >
-      {/* <Grid item xs={12} sx={{ ml: 3, mt: 3, backgroundColor: 'red' }}>
+      <Grid item xs={12} sx={{ ml: 3, mt: 3 }}>
         <Logo loginIcon={true} />
-      </Grid> */}
+      </Grid>
       <Grid item xs={12}>
         <Grid
           item
@@ -38,9 +38,9 @@ const AuthWrapper = ({ children }: Props) => (
           alignItems="center"
           sx={{ minHeight: { xs: 'calc(100vh - 210px)', sm: 'calc(100vh - 134px)', md: 'calc(100vh - 112px)', flexDirection:'column' } }}
         >
-          <Grid item>
+          {/* <Grid item>
             <Logo loginIcon={true} />
-          </Grid>
+          </Grid> */}
           <Grid item>
             <AuthCard>{children}</AuthCard>
           </Grid>
